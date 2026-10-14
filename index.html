@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="om">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Firaol Fayisa Kabeta - Portfolio</title>
+  
+  <!-- PWA & Theme Color (Bakka Sirrii Isaatti Galaggalame) -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#38bdf8">
+
+  <link rel="stylesheet" href="style.css">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">Firaol Fayisa Kabeta</div>
+    <ul class="nav-links">
+      <li><a href="#about" id="nav-about">Waa'ee Koo</a></li>
+      <li><a href="#services" id="nav-services">Tajaajila</a></li>
+      <li><a href="#projects" id="nav-projects">Pirojektoota</a></li>
+      <li><a href="#contact" id="nav-contact">Qunnamtii</a></li>
+    </ul>
+    
+    <!-- Language Selector -->
+    <div class="lang-selector">
+      <select id="languageSelect" onchange="changeLanguage(this.value)">
+        <option value="om">Afaan Oromoo</option>
+        <option value="en">English</option>
+        <option value="am">አማርኛ</option>
+      </select>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <!-- Suuraa Profile Kee -->
+      <img src="images/firaol.jpg" alt="Firaol Fayisa" class="profile-img">
+      
+      <h3 id="hero-welcome">Baga Nagaan Dhuftan!</h3>
+      <h1>Firaol Fayisa Kabeta</h1>
+      <p id="hero-tagline">B.Sc. in Information Technology (CGPA: 3.72 - Great Distinction)</p>
+      <p style="color: #38bdf8; font-style: italic; margin-bottom: 0.5rem;">"Embrace the digital life for a better and simpler future."</p>
+      <p id="hero-desc">Full-Stack Web Developer, Database Specialist fi IT Educator.</p>
+      
+      <div class="hero-btns">
+        <a href="#contact" class="btn primary-btn" id="btn-hire">Na Hojjechiisi / Contact Me</a>
+        <a href="#services" class="btn secondary-btn" id="btn-services">Tajaajila Koo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <h2 id="about-title">Waa'ee Koo (About Me)</h2>
+      
+      <!-- Button Seenaa Banu/Cufu -->
+      <div style="text-align: center; margin-bottom: 1.5rem;">
+        <button id="toggle-about-btn" onclick="toggleAbout()" class="btn primary-btn">
+          📖 Seenaa Koo Dubbisi / Read More
+        </button>
+      </div>
+
+      <!-- Saandoo Seenaa -->
+      <div id="about-card" class="about-card" style="display: none;">
+        <p id="about-text-1" class="about-text">
+          Maqaan koo <strong>Firaol Fayisa Kabeta</strong> jedhama. Biyya Itiyoophiyaa Naannoo Oromiyaa, Godina Lixa Oromiyaa Aanaa Boneyya Bosheetti Abbaa koo <em>Fayyisaa Qaabataa Lataa</em> fi Haadha koo <em>Soogiddee Lammeessaa Waaqjiraa</em> irraa bara 1998 G.C. ttin dhaladhe.
+        </p>
+        
+        <p id="about-text-2" class="about-text">
+          Barumsa koo sadarkaa 1ffaa fi 2ffaa Mana Barumsaa Soodduu Mikaa'el fi Billo Secondary & Preparatory School 'tti baradhe. Sana booda Kolleejjii Barnoota Barsiisota Shaambuutti sadarkaa Dippiloomaatiin saayinsii uumamaa (Physics, Chemistry, Biology) barachuun qabxii olaanaa <strong>CGPA 3.55</strong>'n eebbifame.
+        </p>
+
+        <p id="about-text-3" class="about-text">
+          Eebbifameen booda Giddu-gala Oromiyaatti qacarameen Mana Barumsaa Sadarkaa 1ffaa irratti waggaa 4f Physics fi Chemistry barsiiseera. Osoo barsiisuu digirii koo jalqabaa Yuunivarsiitii Amboo irraa gosa barnootaa baay'ee jaalladhu <strong>Information Technology (IT)</strong>n baradhee qabxii olaanaa <strong>CGPA 3.72 (Great Distinction)</strong>'n eebbifame. Sana boodas Mana Barumsaa Sadarkaa 2ffaa irratti gosa barnootaa Information Technology Waggaa 2f barsiiseera.
+        </p>
+
+        <p id="about-text-4" class="about-text">
+          Dandeettii dhuunfaa kiyya cimsuuf leenjiiwwan IT dabalataa hedduu (Coding, Computer Security, Maintenance, Hardware & Networking...) fudhadheera. Waajjira Barnootaatti dorgomee Ogeessa ICT fi Digital Park ta'uun hojjedheera.
+        </p>
+
+        <p id="about-text-5" class="about-text highlight-text">
+          Amma immoo dandeettii dhuunfaa koo cimsadhee programming languages, coding, fi website adda addaa saxaxuun (designing) namoota barbaadaniif gumaachuun jireenya Digital Ethiopia keessatti qooda fudhachaan jira.
+        </p>
+
+        <div class="about-summary">
+          <p id="about-summary-text">
+            🚀 <strong>Walumaagalatti:</strong> Pirojektoota adda addaa hojjechuu, Koodingii, Database, Web Development fi barnoota IT wajjin walqabatu kamiirrattiyyuu deeggarsa yoo barbaaddan toora quunnamtii kiyyaan na quunnamaa. <strong>Waan dubbistaniif galatoomaa!</strong>
+          </p>
+        </div>
+
+        <div style="text-align: center; margin-top: 1.5rem;">
+          <button onclick="toggleAbout()" class="btn secondary-btn">
+            ✖ Cufi / Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services-section">
+    <h2 id="services-title">Tajaajila An Kennu</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <i class="fa-solid fa-code"></i>
+        <h3 id="srv1-title">Web Development</h3>
+        <p id="srv1-desc">Websaitoota miidhagoo, saffisaa fi bilbilaafis mijatan ijaaruu.</p>
+      </div>
+      <div class="service-card">
+        <i class="fa-solid fa-database"></i>
+        <h3 id="srv2-title">Database Management</h3>
+        <p id="srv2-desc">Database SQL fi NoSQL ijaaruu, gurmeessuu fi eeguu.</p>
+      </div>
+      <div class="service-card">
+        <i class="fa-solid fa-graduation-cap"></i>
+        <h3 id="srv3-title">IT & Coding Mentorship</h3>
+        <p id="srv3-desc">Social media irratti barnoota coding, tech, fi database barsiisuu.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="services-section" style="background-color: #0f172a;">
+    <h2 id="projects-title">Pirojektoota Koo</h2>
+    <div class="services-grid">
+      <div class="service-card" style="text-align: left;">
+        <i class="fa-solid fa-folder-open"></i>
+        <h3>Multilingual Portfolio Website</h3>
+        <p style="font-size: 0.85rem; color: #38bdf8; margin-bottom: 0.5rem;">HTML5, CSS3, JavaScript, PWA</p>
+        <p>Websaitii dhuunfaa afaan sadii (Oromoo, English, Amharic) danda'u fi animation ammayyaa qabu.</p>
+        <a href="https://github.com/firaa18-IT-WebDev-Prog/Msn-firaol-portifolio" target="_blank" style="color: #38bdf8; text-decoration: none; font-weight: bold; display: inline-block; margin-top: 0.8rem;">
+          <i class="fa-brands fa-github"></i> Code GitHub Irratti Ilaali
+        </a>
+      </div>
+
+      <div class="service-card" style="text-align: left;">
+        <i class="fa-solid fa-server"></i>
+        <h3>Database Management & Security</h3>
+        <p style="font-size: 0.85rem; color: #38bdf8; margin-bottom: 0.5rem;">SQL, MySQL, Relational Database</p>
+        <p>Sirna gurmeessaa fi eegumsa deetaabeesii odeeffannoo mamiltootaa to'atu.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Payment Section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2 id="contact-title">Na Qunnamuu Feetaa? / Contact & Payment</h2>
+      <p id="contact-sub">Hojii, gaaffii ykn kaffaltiidhaaf odeeffannoo armaan gadii fayyadamaa!</p>
+
+      <!-- Button Odeeffannoo Banu/Cufu -->
+      <div style="text-align: center; margin: 1.5rem 0;">
+        <button id="toggle-contact-btn" onclick="toggleContactInfo()" class="btn primary-btn">
+          💳 Odeeffannoo Quunnamtii & Kaffaltii / Contact & Payment Info
+        </button>
+      </div>
+
+      <!-- Saandoo Odeeffannoo -->
+      <div id="contact-card" class="contact-card" style="display: none;">
+        
+        <div class="contact-grid">
+          <!-- Kutaa Quunnamtii -->
+          <div class="info-box">
+            <h3><i class="fa-solid fa-address-book"></i> Teessoo Quunnamtii</h3>
+            <p><i class="fa-solid fa-phone"></i> <strong>Bilbila:</strong> <a href="tel:0918914608">0918914608</a></p>
+            <p><i class="fa-solid fa-envelope"></i> <strong>Email:</strong> <a href="mailto:firaolfeyisa18@gmail.com">firaolfeyisa18@gmail.com</a></p>
+            <p><i class="fa-brands fa-facebook"></i> <strong>Facebook:</strong> <a href="https://facebook.com" target="_blank">firaol feyisa klata</a></p>
+            <p><i class="fa-brands fa-telegram"></i> <strong>Telegram:</strong> <a href="https://t.me/firaolfeyisa18" target="_blank">@firaolfeyisa18</a></p>
+            <p><i class="fa-brands fa-github"></i> <strong>GitHub:</strong> <a href="https://github.com/firaa18-IT-WebDev-Prog" target="_blank">firaa18-IT-WebDev-Prog</a></p>
+          </div>
+
+          <!-- Kutaa Kaffaltii -->
+          <div class="info-box payment-box">
+            <h3><i class="fa-solid fa-credit-card"></i> Odeeffannoo Kaffaltii (Payment)</h3>
+            <p class="bank-name"><i class="fa-solid fa-building-columns"></i> Commercial Bank of Ethiopia (CBE)</p>
+            <p class="account-number">
+              <strong>Lakkoofsa Herregaa:</strong><br>
+              <span class="acc-num">1000651236618</span>
+            </p>
+            <p class="account-owner"><strong>Maqaa Suuraa:</strong> FIRAA'OL FAYYISAA QAABATAA</p>
+          </div>
+        </div>
+
+        <div class="social-links" style="margin-top: 2rem;">
+          <a href="tel:0918914608" title="Call Me"><i class="fa-solid fa-phone"></i></a>
+          <a href="mailto:firaolfeyisa18@gmail.com" title="Email Me"><i class="fa-solid fa-envelope"></i></a>
+          <a href="https://facebook.com" target="_blank" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://t.me/firaolfeyisa18" target="_blank" title="Telegram"><i class="fa-brands fa-telegram"></i></a>
+          <a href="https://github.com/firaa18-IT-WebDev-Prog" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+        </div>
+
+        <div style="text-align: center; margin-top: 1.5rem;">
+          <button onclick="toggleContactInfo()" class="btn secondary-btn">
+            ✖ Cufi / Close
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
