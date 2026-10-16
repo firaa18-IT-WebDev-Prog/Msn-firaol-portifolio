@@ -146,3 +146,19 @@ function toggleContactInfo() {
     toggleBtn.innerText = "💳 Odeeffannoo Quunnamtii & Kaffaltii / Contact & Payment Info";
   }
 }
+// Function to toggle Bank Account Number
+function toggleBankAccount() {
+  const accNum = document.getElementById('bank-acc-num');
+  const accHidden = document.getElementById('bank-acc-hidden');
+  const btn = document.getElementById('toggle-bank-btn');
+
+  if (accNum.style.display === 'none') {
+    accNum.style.display = 'inline';
+    accHidden.style.display = 'none';
+    btn.innerHTML = '🙈 Lakkoofsa Herregaa Dhoksi / Hide Account';
+  } else {
+    accNum.style.display = 'none';
+    accHidden.style.display = 'inline';
+    btn.innerHTML = '👁️ Lakkoofsa Herregaa Mul\'isi / Show Account';
+  }
+}
